@@ -14,7 +14,10 @@ const Resume = () => {
     <div>
       <h1>Resume</h1>
       <p>
-        You can download my resume <a href="/path-to-resume.pdf" download>here</a>.
+        You can download my resume 
+        <a href={process.env.PUBLIC_URL + '/resume.pdf'} target="_blank" rel="noopener noreferrer">
+          here
+        </a>.
       </p>
       <h2>Proficiencies</h2>
       <ul>

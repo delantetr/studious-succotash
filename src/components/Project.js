@@ -1,5 +1,6 @@
 import React from 'react';
 
+// THIS SECTINO OF CODE WILL BE USED TO DYNAMICALLY ADD DATA FROM A DATABASE
 // const Project = ({ title, description, deployedLink, githubLink }) => {
 //   return (
 //     <div className="card" style={{ width: '18rem' }}>
@@ -29,41 +30,41 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Test 1',
+    title: 'Project 1',
     description: '',
-    image: '',
+    image: 'https://picsum.photos/640/360',
     deployedLink: '',
     githubLink: 'https://github.com/delantetr'
   },
   {
     id: 3,
-    title: 'Test 2',
+    title: 'Project 2',
     description: '',
-    image: '',
+    image: 'https://picsum.photos/640/360',
     deployedLink: '',
     githubLink: 'https://github.com/delantetr'
   },
   {
     id: 4,
-    title: 'Test 3',
+    title: 'Project 3',
     description: '',
-    image: '',
+    image: 'https://picsum.photos/640/360',
     deployedLink: '',
     githubLink: 'https://github.com/delantetr'
   },
   {
     id: 5,
-    title: 'Test 4',
+    title: 'Project 4',
     description: '',
-    image: '',
+    image: 'https://picsum.photos/640/360',
     deployedLink: '',
     githubLink: 'https://github.com/delantetr'
   },
   {
     id: 6,
-    title: 'Test 5',
+    title: 'Project 5',
     description: '',
-    image: '',
+    image: 'https://picsum.photos/640/360',
     deployedLink: '',
     githubLink: 'https://github.com/delantetr'
   },
