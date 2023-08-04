@@ -24,7 +24,7 @@ const projects = [
     id: 1,
     title: 'Rhythm Review',
     description: 'An online platform that serves as the ultimate hub for music discovery, where users can explore an expansive database of artists, albums, and reviews.',
-    image: '/rhythmreview.png',
+    image: process.env.PUBLIC_URL + '/rhythmreview.png',
     deployedLink: 'https://agile-springs-19422-e0a9573c7a30.herokuapp.com/',
     githubLink: 'https://github.com/delantetr'
   },
