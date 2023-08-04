@@ -1,30 +1,41 @@
 import React, { useState } from 'react';
+import Navigation from './Navigation';
 import Header from './Header';
-// import NavTabs from './NavTabs';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './Footer'
 
-export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('About');
+const PortfolioContainer = () => {
+  const [currentPage, setCurrentPage] = useState('About Me');
+  
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    currentPage === 'About' && <About />
-    currentPage === 'Portfolio' && <Portfolio />
-    currentPage === 'Contact' && <Contact />
-    currentPage === 'Resume' && <Resume />
+    return (
+      currentPage === 'About Me' ? <About /> :
+      currentPage === 'Portfolio' ? <Portfolio /> :
+      currentPage === 'Contact' ? <Contact /> :
+      currentPage === 'Resume' ? <Resume /> :
+      <div>Page not found</div>
+    );
   };
+  
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (currentPage) => {
+    setCurrentPage(currentPage);
+    console.log('currentPage: ', currentPage);
+  };
 
   return (
     <div>
-      <Header currentPage={currentPage} onPageChange={handlePageChange} />
+      <Header />
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
     </div>
   );
 }
+
+export default PortfolioContainer

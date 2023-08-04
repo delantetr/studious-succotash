@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function About() {
+ const About = () => {
   return (
     <div>
-      <h1>About</h1>
+      <h1>About Me</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
@@ -18,4 +18,6 @@ export default function About() {
       </p>
     </div>
   );
-}
+};
+
+export default About;
