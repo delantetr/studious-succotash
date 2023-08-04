@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/studious-succotash/static/css/main.39b9be25.css",
+    "main.js": "/studious-succotash/static/js/main.da4636af.js",
+    "index.html": "/studious-succotash/index.html",
+    "main.39b9be25.css.map": "/studious-succotash/static/css/main.39b9be25.css.map",
+    "main.da4636af.js.map": "/studious-succotash/static/js/main.da4636af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39b9be25.css",
+    "static/js/main.da4636af.js"
+  ]
+}
